@@ -27,7 +27,7 @@ class RunTracker {
     averageSpeed() {
         let totalTime= this.runHistroy.reduce((prev,curr)=>prev+curr.timeTaken,0);
         let totalDistance= this.runHistroy.reduce((prev,curr)=>prev+curr.distance,0);
-        return `${(totalTime/totalDistance).toFixed(1)} meters per second`
+        return `${(totalDistance/totalTime).toFixed(1)} meters per second`
     }
 
 }
